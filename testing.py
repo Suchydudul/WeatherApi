@@ -1,4 +1,5 @@
 import json
 with open("output.json") as file:
     content = json.load(file)
-    print(content["weather"])
+    weather_type = content["weather"][0]
+    print(weather_type)
